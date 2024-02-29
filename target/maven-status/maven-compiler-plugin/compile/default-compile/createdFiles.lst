@@ -1,6 +1,6 @@
 DeleteStudentServlet.class
+UpdateStudentServlet.class
 beans/StudentBean.class
-ProcessStudentServlet.class
 DatabaseToJSONServlet.class
 HelloServlet.class
 ReadStudentServlet.class

@@ -20,6 +20,8 @@
             <th>Facultate</th>
             <th>Specializare</th>
             <th>An Universitar</th>
+            <th>Delete</th>
+            <th>Update</th>
         </tr>
         <% for (beans.StudentBean studentBean : studentBeans) { %>
         <tr>
@@ -35,6 +37,12 @@
                 <form action="./delete" method="post">
                     <input type="hidden" name ="id" value='<%= studentBean.getId() %>'>
                     <input type="submit" name="action" value="delete">
+                </form>
+            </td>
+            <td>
+                <form action="updateStudent.jsp" method="post">
+                    <input type="hidden" name ="id" value='<%= studentBean.getId() %>'>
+                    <input type="submit" name="action" value="update">
                 </form>
             </td>
 

@@ -29,7 +29,15 @@
     <servlet-name>DatabaseToJSON</servlet-name>
     <servlet-class>DatabaseToJSONServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>UpdateStudent</servlet-name>
+    <servlet-class>UpdateStudentServlet</servlet-class>
+  </servlet>
 
+  <servlet-mapping>
+    <servlet-name>UpdateStudent</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
   <servlet-mapping>
     <servlet-name>DatabaseToJSON</servlet-name>
     <url-pattern>/db-to-json</url-pattern>
